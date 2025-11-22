@@ -15,7 +15,6 @@ import random
 BLOCK_A = list(range(1, 5))   # 1–4
 BLOCK_B = list(range(5, 9))   # 5–8
 BLOCK_C = list(range(9, 13))  # 9–12
-BLOCK_D = list(range(13, 17))  # 9–12
 
 def generate_variants(n_students: int, seed: int | None = None) -> list[list[int]]:
     if seed is not None:
@@ -26,8 +25,7 @@ def generate_variants(n_students: int, seed: int | None = None) -> list[list[int
         a = random.sample(BLOCK_A, 1)
         b = random.sample(BLOCK_B, 1)
         c = random.sample(BLOCK_C, 1)
-        d = random.sample(BLOCK_D, 1)
-        variant = sorted(a + b + c + d)
+        variant = sorted(a + b + c)
         variants.append(variant)
     return variants
 
