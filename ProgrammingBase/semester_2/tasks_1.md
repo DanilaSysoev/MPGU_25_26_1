@@ -230,7 +230,8 @@ def complete_task(task_list: list, task_id: int) -> None:
     pass
 
 def filter_tasks(task_list: list, status: str = "all") -> list:
-    """Возвращает отфильтрованный список задач (для вывода)."""
+    """Возвращает отфильтрованный список задач (для вывода).
+    - status: str, одно из трех значений: 'all', 'is_done', 'is_active'"""
     pass
 
 def delete_task(task_list: list, task_id: int) -> None:
